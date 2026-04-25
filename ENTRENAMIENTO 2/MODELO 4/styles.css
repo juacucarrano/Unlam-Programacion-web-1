@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.texto {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+body {
+    height: 100vh;
+}
+
+.grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 22% 22% 1fr;
+    grid-template-rows: 1fr 1fr 38.5%;
+}
+
+.uno {
+    background-color: #dcedc8;
+    grid-row: span 2;
+    order: 1;
+    border: 1vh solid black;
+}
+
+.dos {
+    background-color: #fff9c4;
+    order: 2;
+    grid-column: span 2;
+    border: 1vh solid black;
+}
+
+.tres {
+    background-color: #fff9c4;
+    order: 4;
+    grid-column: span 2;
+    border: 1vh solid black;
+
+} 
+
+.cuatro {
+    background-color: #dcedc8;
+    grid-row: span 2;
+    order: 3;
+    border: 1vh solid black;
+}
+
+.cinco {
+    background-color: #f8bbd0;
+    order: 5;
+    grid-column: span 2;
+    border: 1vh solid black;
+} 
+
+.seis{
+    background-color: #d1e1ff;
+    order: 6;
+    grid-column: span 2;
+    border: 1vh solid black;
+}
+
+
+@media (max-width: 768px) {
+    
+*{
+      font-size: 1.4em;}
+
+    .grid {
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .uno, .dos, .tres, .cuatro, .cinco, .seis {
+        grid-column: span 1;
+        grid-row: span 1;
+        border: 1vh solid black;
+    }
+
+    .dos {
+        background-color: #dcedc8;
+        border: 1vh solid black;
+    }
+
+    .cuatro {
+        background-color: #fff9c4;
+        order: 4;
+        border: 1vh solid black;
+    }
+
+
+
+@media (max-width: 480px) {
+    
+*{
+      font-size: 1.2em;}
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+    }
+
+    .uno {
+        border-bottom: none;
+        border: 1vh solid black;
+    }
+
+    .dos {
+        border-top: none;
+        border: 1vh solid black;
+    }
+
+    .tres {
+        border-bottom: none;
+        border: 1vh solid black;
+    }
+
+    .cuatro {
+        border-top: none;
+        border: 1vh solid black;
+    }
+}
+
+}

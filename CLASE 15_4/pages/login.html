@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO DE SESION</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="seccion">LOGIN</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Entradas</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <form action="../index.html" method="post" class="formulario">
+                    <label for="sex">Sexo:
+                        <input type="radio" name="user_sex" value="masculino" required> Masculino
+                        <input type="radio" name="user_sex" value="femenino" required> Femenino     
+                    </label>
+                    <p></p>
+                    <input type="text"
+                       name="user_name"
+                       placeholder="Nombre de usuario"
+                       required>
+                       <p></p>
+                    <input type="email"
+                       name="user_email"
+                       placeholder="Correo electrónico"
+                       required>
+                       <p></p>
+                    <input type="password"
+                       name="user_password"
+                          placeholder="Contraseña"
+                            required>
+                            <p></p>
+                    <input type="date"
+                    name="user_birth_date"
+                    placeholder="Fecha De Nacimiento"
+                    required>
+                    <p></p>
+                    <button type="submit">Iniciar Sesión
+                        
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        TODOS LOS DERECHOS RESERVADOS 2026
+    </footer>
+
+</body>
+
+</html>
